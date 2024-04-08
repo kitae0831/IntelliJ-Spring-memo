@@ -4,9 +4,12 @@ import com.sparta.memo.dto.MemoRequestDto;
 import com.sparta.memo.dto.MemoResponseDto;
 import com.sparta.memo.entity.Memo;
 import com.sparta.memo.repository.MemoRepository;
+import org.apache.catalina.core.ApplicationContext;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 
+@Component
 public class MemoService {
 
     private final MemoRepository memoRepository;
